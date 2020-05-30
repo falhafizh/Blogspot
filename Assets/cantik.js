@@ -1,7 +1,7 @@
     "use strict";
 
-var indicator = document.querySelector('.nav-indicator');
-var items = document.querySelectorAll('.nav-item');
+var indicator = document.querySelector('.naviku-indicator');
+var items = document.querySelectorAll('.naviku-item');
 
 function handleIndicator(el) {
   items.forEach(function (item) {
