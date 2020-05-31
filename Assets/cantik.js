@@ -1,4 +1,5 @@
-    "use strict";
+//<![CDATA[
+"use strict";
 
 var indicator = document.querySelector('.naviku-indicator');
 var items = document.querySelectorAll('.naviku-item');
@@ -22,3 +23,4 @@ items.forEach(function (item, index) {
   item.classList.contains('is-active') && handleIndicator(item);
 });
      
+//]]>
