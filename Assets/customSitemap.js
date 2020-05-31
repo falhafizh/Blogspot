@@ -252,7 +252,7 @@ function displayToc2() {
     while (b < postTitle.length) {
         temp1 = postLabels[b];
         document.write("<p/>");
-        document.write('<p class="labels"><a href="/search/label/' + temp1 + '"><i class="fa fa-plus-square-o" aria-hidden="true"></i> ' + temp1 + "</a></p><ol>");
+        document.write('<p class="labels"><a href="/search/label/' + temp1 + '">Kategori: ' + temp1 + "</a></p><ol>");
         firsti = a;
         do {
             document.write("<li>");
