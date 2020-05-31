@@ -252,11 +252,11 @@ function displayToc2() {
     while (b < postTitle.length) {
         temp1 = postLabels[b];
         document.write("<p/>");
-        document.write('<p class="labels"><a href="/search/label/' + temp1 + '">Kategori: ' + temp1 + "</a></p><ol>");
+        document.write('Kategori: <p class="labels"><a href="/search/label/' + temp1 + '">' + temp1 + "</a></p><ol>");
         firsti = a;
         do {
             document.write("<li>");
-            document.write('<a class="post-titles" href="' + postUrl[a] + '">' + postTitle[a] + "</a>");
+            document.write('<a class="post-titles" href="' + postUrl[a] + '"> Kunjungi' + "</a>" + postTitle[a]);
             if (postRecent[a] == true) {
                 document.write('<img src="http://1.bp.blogspot.com/-_VZwBpHw_SI/UrXvLbFxacI/AAAAAAAAFiQ/ZGqWZUZesCI/s1600/new_icon.gif" style="max-width: 22px"/></span></strong>')
             }
