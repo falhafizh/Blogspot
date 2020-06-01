@@ -185,10 +185,10 @@ function bloggerEverTicker(e) {
 	$('.tl-ticker-con .pp').click(function () {
 		if ($(this).hasClass('paused')) {
 			$('#tl-ticker').vTicker('pause', false);
-			$(this).removeClass('paused').html('<i class="fa-pause"></i>')
+			$(this).removeClass('paused').html('<i class="fas fa-pause-circle"></i>')
 		} else {
 			$('#tl-ticker').vTicker('pause', true);
-			$(this).addClass('paused').html('<i class="fa-play"></i>')
+			$(this).addClass('paused').html('<i class="fas fa-play"></i>')
 		}
 	});
 	$('.tl-ticker-con .down').click(function () {
