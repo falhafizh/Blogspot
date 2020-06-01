@@ -153,7 +153,7 @@ $(function () {
                     try {
                         var n = a.feed.entry[e].media$thumbnail.url;
                     } catch (l) {
-                        var n = "http://3.bp.blogspot.com/-zvVhSlsk0xg/VfzbhOQ1zPI/AAAAAAAAAt0/hRsGBhuP2a0/s1600/No++Available.png";
+                        var n = "https://1.bp.blogspot.com/-BsMyq_oXDJs/XZvx7LCyLBI/AAAAAAAABr0/p87UwVhlyzoBFD3BGdwybQlRW6M-sd0qACLcBGAsYHQ/s1600-rw/nothumb.jpg";
                     }
                     var r = a.feed.entry[e].title.$t,
                         d = '<div class="search-item"><a href="' + s + '" target="_blank"><img src="' + n + '"/></a><a href="' + s + '" target="_blank">' + r + "</a></div>";
