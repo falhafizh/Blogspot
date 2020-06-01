@@ -107,7 +107,7 @@ $(function () {
 					try {
 						var c = n.media$thumbnail.url.replace("s72-c", "w80-h75-c")
 					} catch(p) {
-						var c = "http://3.bp.blogspot.com/-zvVhSlsk0xg/VfzbhOQ1zPI/AAAAAAAAAt0/hRsGBhuP2a0/s1600/No+Image+Available.png"
+						var c = "https://1.bp.blogspot.com/-BsMyq_oXDJs/XZvx7LCyLBI/AAAAAAAABr0/p87UwVhlyzoBFD3BGdwybQlRW6M-sd0qACLcBGAsYHQ/s1600-rw/nothumb.jpg"
 					}
 					var d = n.title.$t,
 					u = n.published.$t,
@@ -122,7 +122,7 @@ $(function () {
 					var y = g.media$thumbnail.url.replace("s72-c", "w400-h225-c"),
 					$ = g.media$thumbnail.url.replace("s72-c", "s900-no")
 				} catch(p) {
-					var y = "http://3.bp.blogspot.com/-zvVhSlsk0xg/VfzbhOQ1zPI/AAAAAAAAAt0/hRsGBhuP2a0/s1600/No+Image+Available.png"
+					var y = "https://1.bp.blogspot.com/-BsMyq_oXDJs/XZvx7LCyLBI/AAAAAAAABr0/p87UwVhlyzoBFD3BGdwybQlRW6M-sd0qACLcBGAsYHQ/s1600-rw/nothumb.jpg"
 				}
 				for (var b = 0; b < g.link.length; b++) if ("alternate" == a.feed.entry[0].link[b].rel) {
 					var k = a.feed.entry[0].link[b].href;
@@ -221,7 +221,7 @@ $(function () {
 					try {
 						var c = n.media$thumbnail.url.replace("s72-c", "w200-h150-c")
 					} catch(p) {
-						var c = "http://3.bp.blogspot.com/-zvVhSlsk0xg/VfzbhOQ1zPI/AAAAAAAAAt0/hRsGBhuP2a0/s1600/No+Image+Available.png"
+						var c = "https://1.bp.blogspot.com/-BsMyq_oXDJs/XZvx7LCyLBI/AAAAAAAABr0/p87UwVhlyzoBFD3BGdwybQlRW6M-sd0qACLcBGAsYHQ/s1600-rw/nothumb.jpg"
 					}
 					var d = n.title.$t,
 					u = n.published.$t,
@@ -236,7 +236,7 @@ $(function () {
 					var y = g.media$thumbnail.url.replace("s72-c", "w600-h450-c"),
 					$ = g.media$thumbnail.url.replace("s72-c", "s900-no")
 				} catch(p) {
-					var y = "http://3.bp.blogspot.com/-zvVhSlsk0xg/VfzbhOQ1zPI/AAAAAAAAAt0/hRsGBhuP2a0/s1600/No+Image+Available.png"
+					var y = "https://1.bp.blogspot.com/-BsMyq_oXDJs/XZvx7LCyLBI/AAAAAAAABr0/p87UwVhlyzoBFD3BGdwybQlRW6M-sd0qACLcBGAsYHQ/s1600-rw/nothumb.jpg"
 				}
 				for (var b = 0; b < g.link.length; b++) if ("alternate" == a.feed.entry[0].link[b].rel) {
 					var k = a.feed.entry[0].link[b].href;
@@ -269,7 +269,7 @@ $(function () {
 					var a = e.media$thumbnail.url.replace("s72-c", "w368-h350-c"),
 					r = e.media$thumbnail.url.replace("s72-c", "s900-no")
 				} catch(n) {
-					var a = "http://3.bp.blogspot.com/-zvVhSlsk0xg/VfzbhOQ1zPI/AAAAAAAAAt0/hRsGBhuP2a0/s1600/No+Image+Available.png"
+					var a = "https://1.bp.blogspot.com/-BsMyq_oXDJs/XZvx7LCyLBI/AAAAAAAABr0/p87UwVhlyzoBFD3BGdwybQlRW6M-sd0qACLcBGAsYHQ/s1600-rw/nothumb.jpg"
 				}
 				for (var l = 0; l < e.link.length; l++) if ("alternate" == e.link[l].rel) {
 					var i = e.link[l].href;
@@ -307,7 +307,7 @@ $(function () {
 					try {
 						var c = n.media$thumbnail.url.replace("s72-c", "w80-h75-c")
 					} catch(p) {
-						var c = "http://3.bp.blogspot.com/-zvVhSlsk0xg/VfzbhOQ1zPI/AAAAAAAAAt0/hRsGBhuP2a0/s1600/No+Image+Available.png"
+						var c = "https://1.bp.blogspot.com/-BsMyq_oXDJs/XZvx7LCyLBI/AAAAAAAABr0/p87UwVhlyzoBFD3BGdwybQlRW6M-sd0qACLcBGAsYHQ/s1600-rw/nothumb.jpg"
 					}
 					var d = n.title.$t,
 					u = n.published.$t,
@@ -340,7 +340,7 @@ $(function () {
 					try {
 						var n = t.feed.entry[e].media$thumbnail.url.replace("s72-c", "s150-c")
 					} catch(l) {
-						var n = "http://3.bp.blogspot.com/-zvVhSlsk0xg/VfzbhOQ1zPI/AAAAAAAAAt0/hRsGBhuP2a0/s1600/No+Image+Available.png"
+						var n = "https://1.bp.blogspot.com/-BsMyq_oXDJs/XZvx7LCyLBI/AAAAAAAABr0/p87UwVhlyzoBFD3BGdwybQlRW6M-sd0qACLcBGAsYHQ/s1600-rw/nothumb.jpg"
 					}
 					var i = t.feed.entry[e],
 					o = i.title.$t,
