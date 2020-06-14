@@ -258,7 +258,7 @@ function displayToc2() {
             document.write("<li>");
             document.write('<a class="post-titles" href="' + postUrl[a] + '"> [Lihat] ' + "</a>" + postTitle[a]);
             if (postRecent[a] == true) {
-                document.write('<img src="http://1.bp.blogspot.com/-_VZwBpHw_SI/UrXvLbFxacI/AAAAAAAAFiQ/ZGqWZUZesCI/s1600/new_icon.gif" style="max-width: 22px"/></span></strong>')
+                document.write('<img src="http://1.bp.blogspot.com/-_VZwBpHw_SI/UrXvLbFxacI/AAAAAAAAFiQ/ZGqWZUZesCI/s1600/new_icon.gif" style="max-width: 100%;display: inline;"/></span></strong>')
             }
             document.write("</li>");
             a = a + 1
