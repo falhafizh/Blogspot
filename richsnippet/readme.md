@@ -10,6 +10,6 @@ more : https://www.thedigitalseo.com/2016/06/how-to-appear-google-sitelinks-sear
 
 List here :
 1. Logo Brand Full (https://cdn.statically.io/gh/falhafizh/Blogspot/9b5b74e0/richsnippet/brand-logo.png)
-2. Logo Brand Square
+2. Logo Brand Square (https://cdn.statically.io/gh/falhafizh/Blogspot/4eb92dee/richsnippet/brand-square.png)
 
 2. Sitelink & Specify Web
