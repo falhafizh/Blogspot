@@ -9,5 +9,5 @@ more : https://www.thedigitalseo.com/2016/06/how-to-appear-google-sitelinks-sear
 
 
 List here :
-1. Logo brand
+1. Logo brand (https://cdn.statically.io/gh/falhafizh/Blogspot/9b5b74e0/richsnippet/brand-logo.png)
 2. Sitelink & Specify Web
