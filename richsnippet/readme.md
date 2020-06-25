@@ -3,6 +3,8 @@ There are many other rich snippets available that Google developed to enhance it
 - Social Media Links Rich Snippet
 - Specify Organization's Logo
 - Specify Website URL
+
+
 more : https://www.thedigitalseo.com/2016/06/how-to-appear-google-sitelinks-search.html
 
 
