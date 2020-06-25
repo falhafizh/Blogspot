@@ -5,7 +5,10 @@ There are many other rich snippets available that Google developed to enhance it
 - Specify Website URL
 
 
-more : https://www.thedigitalseo.com/2016/06/how-to-appear-google-sitelinks-search.html
+more :
+https://developers.google.com
+https://developers.google.com/search/docs/data-types/
+https://www.thedigitalseo.com/2016/06/how-to-appear-google-sitelinks-search.html
 
 
 List here :
