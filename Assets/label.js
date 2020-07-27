@@ -27,27 +27,26 @@ function getmeta(t) {
 	n = '<span class="recentdate"><i class="fa fa-clock-o"></i> ' + e[parseInt(s, 10)] + " " + r + " " + a + "</span> ";
 	return n
 }
-
 function getresult(t, e) {
-    if (void 0 === t) var a = e;
-    else var a = t;
+	if (void 0 === t) var a = e;
+	else var a = t;
 	return a
 }
-
 function getauthor(t) {
-	for (var e = 0; e < t.length; e++) var a = "<span class='authorname'>" + t[e].name.$t + "</span>";
+	for (var e = 0; e < t.length; e++) var a = "<span class='authorname'><i class='fa fa-user'></i> " + t[e].name.$t + "</span>";
 	return a
 }
 function getfc(e) {
-	if (e.category[0] !== "undefined") {return e.category[0].term
-}
+	if (e.category[0] !== "undefined") {
+		return e.category[0].term
+	}
 }
 function gethead(t, e, a, s, v) {
 	if (v == undefined) {
-		v = 'Tampilkan Semua'
+		v = 'View More'
 	}
 	var r = "search/label/" + t + "?max-results=8",
-	n = '<div class="tl-recentLink ' + a + 'head"><div class="tl-recentText"><span class="tl-headtext">' + s + " " + t + '</span><span class="tl-headtextHover">' + s + " " + t + '</span></div></div>';
+	n = '<div class="tl-recentLink ' + a + 'head"><div class="tl-recentText"><span class="tl-headtext">' + s + " " + t + '</span><span class="tl-headtextHover">' + s + " " + t + '</span></div><a href="' + r + '" class="tl-headlinks">' + v + ' <i class="fa fa-angle-right"></i></a></div>';
 	return n
 }
 $(function () {
@@ -289,7 +288,7 @@ $(function () {
 		var e = $(this).attr("data-label"),
 		vmt = $(this).attr("data-vmt"),
 		dr = $(this).attr("data-results") === undefined ? 5 : $(this).attr("data-results"),
-		n = "/feeds/posts/summary/-/" + e + "?",
+		n = "/feeds/posts/summary/-/" + e + "?max-results=" + dr + "&alt=json-in-script",
 		l = $(this);
 		l.append('<div class="tl-wspace"><div class="simple-inner"></div></div>'),
 		$.ajax({
@@ -315,7 +314,7 @@ $(function () {
 					h = "<h3><a href=" + o + ">" + d + "</a></h3>",
 					f = getmeta(u),
 					v = getauthor(n.author),
-					m = '<div class="container"><div class="tlrp-thumb tl-thumboverlay"><a class="featured-thumb" title="' + d + '" href="' + o + '"><img src="' + c + '"/></a></div><div class="recentcontent">' + h + '<div class="metadata">' + f + "</div></div>";
+					m = '<div class="container"><div class="tlrp-thumb tl-thumboverlay"><a class="featured-thumb" title="' + d + '" href="' + o + '"><img src="' + c + '"/></a></div><div class="recentcontent">' + h + '<div class="metadata">' + f + v + "</div></div>";
 					l.find(".simple-inner").append(m)
 				}
 			}
@@ -703,7 +702,7 @@ $(function () {
 	});
 	function t(t, e, a, s, v) {
 		if (v == 'undefined') {
-			v = 'Tampilkan Semua'
+			v = 'View More'
 		}
 		var r = "" + e + "search/label/" + t + "?max-results=8",
 		n = '<div class="tl-recentLink ' + a + 'head"><div class="tl-recentText"><span class="tl-headtext">' + s + " " + t + '</span><span class="tl-headtextHover">' + s + " " + t + '</span></div><a href="' + r + '" class="tl-headlinks">' + v + ' <i class="fa fa-angle-right"></i></a></div>';
