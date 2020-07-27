@@ -39,9 +39,14 @@ function getauthor(t) {
 	return a
 }
 function getfc(e) {
-	if (e.category[0] !== "undefined") {return e.category[0].term}
+	if (e.category[0] !== "undefined") {return e.category[0].term
 }
-function gethead(t, e, a, s) {		
+}
+function gethead(t, e, a, s, v) {
+	if (v == undefined) {
+		v = 'Tampilkan Semua'
+	}
+	var r = "search/label/" + t + "?max-results=8",
 	n = '<div class="tl-recentLink ' + a + 'head"><div class="tl-recentText"><span class="tl-headtext">' + s + " " + t + '</span><span class="tl-headtextHover">' + s + " " + t + '</span></div></div>';
 	return n
 }
