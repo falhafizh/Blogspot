@@ -1,4 +1,12 @@
-//<![CDATA[
+function t(t, e, a, s, v) {
+	if (v == 'undefined') {
+        v = 'Tampilkan Semua'
+    }
+	var r = "" + e + "search/label/" + t + "?max-results=8",
+	n = '<div class="tl-recentLink ' + a + 'head"><div class="tl-recentText"><span class="tl-headtext">' + s + " " + t + '</span><span class="tl-headtextHover">' + s + " " + t + '</span></div><a href="' + r + '" class="tl-headlinks"></i></a></div>';
+	return n
+}
+
 function getmeta(t) {
 	var e = new Array;
 	e[1] = "Jan",
@@ -19,13 +27,15 @@ function getmeta(t) {
 	n = '<span class="recentdate"><i class="fa fa-clock-o"></i> ' + e[parseInt(s, 10)] + " " + r + " " + a + "</span> ";
 	return n
 }
+
 function getresult(t, e) {
-	if (void 0 === t) var a = e;
-	else var a = t;
+    if (void 0 === t) var a = e;
+    else var a = t;
 	return a
 }
+
 function getauthor(t) {
-	for (var e = 0; e < t.length; e++) var a = "<span class='authorname'>fahmyalhafidz</span>";
+	for (var e = 0; e < t.length; e++) var a = "<span class='authorname'>" + t[e].name.$t + "</span>";
 	return a
 }
 function getfc(e) {
@@ -34,8 +44,11 @@ function getfc(e) {
 	}
 }
 function gethead(t, e, a, s, v) {
-	var r = "search/label/" + t + "?",
-	n = '<div class="tl-recentLink ' + a + 'head"><div class="tl-recentText"><span class="tl-headtext">' + s + " " + t + '</span><span class="tl-headtextHover">' + s + " " + t + '</span></div><a href="' + r + '" class="tl-headlinks">'</a></div>';
+	if (v == undefined) {
+		v = 'Tampilkan Semua'
+	}
+	var r = "search/label/" + t + "?max-results=8",
+	n = '<div class="tl-recentLink ' + a + 'head"><div class="tl-recentText"><span class="tl-headtext">' + s + " " + t + '</span><span class="tl-headtextHover">' + s + " " + t + '</span></div><a href="' + r + '" class="tl-headlinks">' + v + ' <i class="fa fa-angle-right"></i></a></div>';
 	return n
 }
 $(function () {
@@ -277,7 +290,7 @@ $(function () {
 		var e = $(this).attr("data-label"),
 		vmt = $(this).attr("data-vmt"),
 		dr = $(this).attr("data-results") === undefined ? 5 : $(this).attr("data-results"),
-		n = "/feeds/posts/summary/-/" + e + "?",
+		n = "/feeds/posts/summary/-/" + e + "?max-results=" + dr + "&alt=json-in-script",
 		l = $(this);
 		l.append('<div class="tl-wspace"><div class="simple-inner"></div></div>'),
 		$.ajax({
@@ -691,7 +704,7 @@ $(function () {
 	});
 	function t(t, e, a, s, v) {
 		if (v == 'undefined') {
-			v = 'View More'
+			v = 'Tampilkan Semua'
 		}
 		var r = "" + e + "search/label/" + t + "?max-results=8",
 		n = '<div class="tl-recentLink ' + a + 'head"><div class="tl-recentText"><span class="tl-headtext">' + s + " " + t + '</span><span class="tl-headtextHover">' + s + " " + t + '</span></div><a href="' + r + '" class="tl-headlinks">' + v + ' <i class="fa fa-angle-right"></i></a></div>';
@@ -880,4 +893,3 @@ $(function () {
 		})
 	})
 });
-//]]>
