@@ -1,12 +1,12 @@
+//<![CDATA[
 function t(t, e, a, s, v) {
 	if (v == 'undefined') {
-        v = 'Tampilkan Semua'
-    }
+		v = 'View More'
+	}
 	var r = "" + e + "search/label/" + t + "?max-results=8",
-	n = '<div class="tl-recentLink ' + a + 'head"><div class="tl-recentText"><span class="tl-headtext">' + s + " " + t + '</span><span class="tl-headtextHover">' + s + " " + t + '</span></div><a href="' + r + '" class="tl-headlinks"></i></a></div>';
+	n = '<div class="tl-recentLink ' + a + 'head"><div class="tl-recentText"><span class="tl-headtext">' + s + " " + t + '</span><span class="tl-headtextHover">' + s + " " + t + '</span></div><a href="' + r + '" class="tl-headlinks">' + v + ' <i class="fa fa-angle-right"></i></a></div>';
 	return n
 }
-
 function getmeta(t) {
 	var e = new Array;
 	e[1] = "Jan",
@@ -892,3 +892,4 @@ $(function () {
 		})
 	})
 });
+//]]>
