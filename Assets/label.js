@@ -288,7 +288,7 @@
             var e = $(this).attr("data-label"),
             vmt = $(this).attr("data-vmt"),
             dr = $(this).attr("data-results") === undefined ? 5 : $(this).attr("data-results"),
-            n = "/feeds/posts/summary/-/" + e + "?",
+            n = "/feeds/posts/summary/-/" + e + "?max-results=" + dr + "&alt=json-in-script",
             l = $(this);
             l.append('<div class="tl-wspace"><div class="simple-inner"></div></div>'),
             $.ajax({
@@ -298,7 +298,7 @@
                 contentType: "application/json",
                 dataType: "jsonp",
                 success: function (s) {
-                    l.prepend(gethead(e, '/', "simple", "<i class='fa fa-rss'></i>", vmt));
+                    l.prepend(gethead(e, '/', "simple", "", vmt));
                     for (var r = 0; r < s.feed.entry.length; r++) {
                         for (var n = s.feed.entry[r], i = 0; i < n.link.length; i++) if ("alternate" == n.link[i].rel) {
                             var o = n.link[i].href;
