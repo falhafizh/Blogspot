@@ -1,0 +1,1 @@
+assets for physics thumbnail
