@@ -1,0 +1,45 @@
+Custom Code 
+[css]
+:not(input):not(textarea), img{-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}
+.katex-display>.katex {display: block;text-align: left;white-space: nowrap;}
+.soal {margin-bottom: 10px;border: .5px solid #ebebeb;border-radius: 8px;}
+.soal:hover {box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);}
+.isi {padding: 10px;}
+.konten {padding: 10px; display: none; overflow: hidden;}
+.tampilkan {cursor: pointer; padding: 10px; text-align: left; border-bottom: 1px solid #ebebeb; font-size: 20px; border-radius: 8px;}
+.tampilkan:after {content: '\002B'; color: black; font-weight: bold; margin-left: 5px;float: right;}
+.tampilkan, .aktif:after {content: "\2212";}
+.lebar {width: 300px; background: #f9f8f8; font-weight: bold;}
+.td-related-title{display:none;}
+.td-post-sharing-bottom {border-style: none;border-color: #ededed;border-width: 0;padding: 12px 0;margin-bottom: 0px;}
+.td-tags {margin: 0;}
+.td-tags span, .td-tags a, .td-more-articles-box, .td-category a {border-radius:8px}
+.author-box-wrap {border-radius: 8px;}
+.page-nav a, .page-nav span {border-radius: 8px;}
+a.daftar-isi:hover {background:white;border: 1px solid #b1b1b1;text-decoration:none;}
+a.daftar-isi {width: 100%;display: block;border-radius: 8px;padding-left: 10px;margin-bottom: 4px;white-space: nowrap;overflow-x: auto;line-height: 35px;border: 1px solid #ebebeb;background: #f3f2ef;color: black}
+img{border-radius:8px;}
+@media (min-width: 767px) {
+.td-container, .tdc-row, .tdc-row-composer, .td-pb-row {width: 767px; margin-left: auto; margin-right: auto;}
+.tdc-row, .tdc-row-composer, .td-pb-row {background: white; border-radius: 8px; margin-top: 10px;}
+.td-container-wrap{background-color: #eee;}
+.td-category {margin-top: 10px;}
+.td-post-header, .td-page-header {margin-top: 20px;}
+}
+@media (max-width: 767px) {.page-nav {margin-right:0;margin-left:0;}}
+
+[js]
+var tampilkan = document.getElementsByClassName("tampilkan");
+var iterasi;
+for (iterasi = 0; iterasi < tampilkan.length; iterasi++) {
+  tampilkan[iterasi].addEventListener("click", function() {
+    this.classList.toggle("aktif");
+    var konten = this.nextElementSibling;
+    if (konten.style.display === "block") {
+      konten.style.display = "none";
+    } else {
+      konten.style.display = "block";
+    }
+  });
+}
+document.addEventListener("contextmenu", function(e){e.preventDefault();}, false);
